@@ -3,8 +3,37 @@ body {
   height: 100%;
   margin: 0;
 }
-body {
-  background-color: rgb(11, 0, 24);
+
+.dark {
+  background-color: rgb(17, 1, 36);
+}
+
+.light {
+  background-color: rgb(252, 224, 212);
+}
+
+#theme {
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white;
+  background-color: #9b59b6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 5px 0 #8e44ad;
+  transition: all 0.1s ease;
+  width: 175px;
+  margin-left: auto;
+}
+
+#theme:active {
+  box-shadow: 0 2px 0 #8e44ad;
+  transform: translateY(3px);
+}
+
+#theme:hover {
+  color: yellow;
 }
 
 .container {
@@ -18,13 +47,15 @@ body {
   height: 300px;
   border-radius: 150px;
   margin-left: 39px;
-  margin-top: 30px;
 }
 
 #MainText {
-  color: white;
   font-family: Apple Chancery, cursive;
-  margin-left: 14px;
+  margin-left: 15%;
+}
+
+.dark #MainText {
+  color: white;;
 }
 
 main {
@@ -40,10 +71,6 @@ main {
   flex: 0 0 350px;
 }
 
-#right {
-  color: white;
-}
-
 #phrases {
   margin-top: 60px;
 }
@@ -54,15 +81,22 @@ main {
 
 #factsText {
   font-size: 24px;
-}
-
-#char {
-  margin-top: 20px;
   font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
-#characteristic {
+#char {
+  margin-top: 80px;
+  margin-left: 10%;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.dark #characteristic {
   color: rgb(5, 255, 5);
+  font-size: 25px;
+}
+
+.light #characteristic {
+  color: rgb(255, 0, 0);
   font-size: 25px;
 }
 
@@ -74,22 +108,19 @@ main {
   color: white;
 }
 
-.text {
+.dark .text {
   color: white;
 }
 
 #gallerey {
-  margin-top: 60px;
+  margin-top: 80px;
+  margin-left: 10%;
   text-align: center;
   font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
-#gallereyImg {
-  display: inline-block;
-}
-
-footer {
-  background-color: #000000;
+.dark footer {
+  background-color: black;
   width: 100%;
   height: 240px;
   text-align: center;
@@ -98,7 +129,17 @@ footer {
   margin-top: 60px;
 }
 
-#author {
+.light footer {
+  background-color: white;
+  width: 100%;
+  height: 240px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  margin-top: 60px;
+}
+
+.dark #author {
   color: white;
 }
 
