@@ -14,6 +14,7 @@ body {
 
 #theme {
   padding: 15px 30px;
+  margin: 10px;
   font-size: 16px;
   color: white;
   background-color: #9b59b6;
@@ -38,7 +39,6 @@ body {
 #left {
   flex: 0 0 350px;
 }
-
 
 @media (min-width: 800px){
   main {
@@ -68,25 +68,38 @@ body {
   }
 }
 
-
 @media (max-width: 800px){
   main {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+  }
+
+  #MainImg {
+    text-align: center;
+    margin-left: 50px;
+  }
+  
+  #MainText {
     text-align: center;
   }
 
   #gallerey {
     margin-bottom: 50px;
   }
-}
 
+  #theme {
+    margin-left: 110px;
+    margin-bottom: 30px;
+  }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  #phrasesTitle {
+    text-align: center;
+  }
+
+  #factsTitle {
+    text-align: center;
+  }
 }
 
 #MainImg {
